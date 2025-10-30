@@ -1,0 +1,135 @@
+name: "main"
+instances {
+  id: "ch\303\243o"
+  prototype: "/main/chao.go"
+  position {
+    x: 15.367649
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o1"
+  prototype: "/main/chao.go"
+  position {
+    x: 46.36765
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o2"
+  prototype: "/main/chao.go"
+  position {
+    x: 78.367645
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o3"
+  prototype: "/main/chao.go"
+  position {
+    x: 110.367645
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o4"
+  prototype: "/main/chao.go"
+  position {
+    x: 142.36765
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o5"
+  prototype: "/main/chao.go"
+  position {
+    x: 175.36765
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o6"
+  prototype: "/main/chao.go"
+  position {
+    x: 206.36765
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o7"
+  prototype: "/main/chao.go"
+  position {
+    x: 238.36765
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o8"
+  prototype: "/main/chao.go"
+  position {
+    x: 269.36765
+    y: 17.281567
+  }
+}
+instances {
+  id: "player"
+  prototype: "/main/player.go"
+  position {
+    x: 23.937847
+    y: 49.33546
+  }
+  scale3 {
+    x: 3.7856
+    y: 3.7856
+    z: 3.7856
+  }
+}
+instances {
+  id: "ch\303\243o9"
+  prototype: "/main/chao.go"
+  position {
+    x: 300.36765
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o10"
+  prototype: "/main/chao.go"
+  position {
+    x: 333.36765
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o11"
+  prototype: "/main/chao.go"
+  position {
+    x: 364.36765
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o12"
+  prototype: "/main/chao.go"
+  position {
+    x: 396.36765
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o13"
+  prototype: "/main/chao.go"
+  position {
+    x: 427.36765
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o14"
+  prototype: "/main/chao.go"
+  position {
+    x: 459.36765
+    y: 17.281567
+  }
+}
+scale_along_z: 0

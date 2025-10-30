@@ -1,0 +1,13 @@
+images {
+  image: "/main/assets/sprites/moeda.png.png"
+}
+images {
+  image: "/main/assets/sprites/ovo.png.png"
+}
+images {
+  image: "/main/assets/sprites/pera.png.png"
+}
+images {
+  image: "/main/assets/sprites/chao.png"
+}
+extrude_borders: 2
