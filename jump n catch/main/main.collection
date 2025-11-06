@@ -132,4 +132,153 @@ instances {
     y: 17.281567
   }
 }
+instances {
+  id: "ch\303\243o15"
+  prototype: "/main/chao.go"
+  position {
+    x: 492.36765
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o16"
+  prototype: "/main/chao.go"
+  position {
+    x: 523.3677
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o17"
+  prototype: "/main/chao.go"
+  position {
+    x: 554.3677
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o18"
+  prototype: "/main/chao.go"
+  position {
+    x: 587.3677
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o19"
+  prototype: "/main/chao.go"
+  position {
+    x: 618.3677
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o20"
+  prototype: "/main/chao.go"
+  position {
+    x: 650.3677
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o21"
+  prototype: "/main/chao.go"
+  position {
+    x: 681.3677
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o22"
+  prototype: "/main/chao.go"
+  position {
+    x: 713.3677
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o23"
+  prototype: "/main/chao.go"
+  position {
+    x: 747.3677
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o24"
+  prototype: "/main/chao.go"
+  position {
+    x: 778.3677
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o25"
+  prototype: "/main/chao.go"
+  position {
+    x: 809.3677
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o26"
+  prototype: "/main/chao.go"
+  position {
+    x: 842.3677
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o27"
+  prototype: "/main/chao.go"
+  position {
+    x: 873.3677
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o28"
+  prototype: "/main/chao.go"
+  position {
+    x: 905.3677
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o29"
+  prototype: "/main/chao.go"
+  position {
+    x: 936.3677
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o30"
+  prototype: "/main/chao.go"
+  position {
+    x: 968.3677
+    y: 17.281567
+  }
+}
+instances {
+  id: "ch\303\243o31"
+  prototype: "/main/chao.go"
+  position {
+    x: 998.3677
+    y: 17.281567
+  }
+}
+instances {
+  id: "enemy"
+  prototype: "/main/enemy.go"
+  position {
+    x: 129.57649
+    y: 62.034176
+  }
+  scale3 {
+    x: 2.31158
+    y: 2.568059
+    z: 1.626667
+  }
+}
 scale_along_z: 0
