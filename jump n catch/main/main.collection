@@ -272,7 +272,7 @@ instances {
   id: "enemy"
   prototype: "/main/enemy.go"
   position {
-    x: 129.57649
+    x: 135.57648
     y: 62.034176
   }
   scale3 {

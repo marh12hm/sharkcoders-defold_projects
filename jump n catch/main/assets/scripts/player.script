@@ -12,9 +12,15 @@ function init(self)
 	self.gravidade = -600
 	self.forca_pulo = 400
 	self.grounded = false
+	--IMPORTANTE:grounded é resetado aqui. só será reativado em on_message()
+	self.grounded = false
+	self.vida = 5
+	self.invencivel = false
+	self.tempo_invencivel = 1.0 --segundos de invencibilidade
+	self.timer_invencivel = 0 
 	
---Pede ao motor para que este objeto receber eventos de input (teclado, rato, etc...)
-msg.post(".", "acquire_input_focus")
+	--Pede ao motor para que este objeto receber eventos de input
+	msg.post(".", "acquire_input_focus")
 end
 
 function update(self, dt)
@@ -37,9 +43,14 @@ function update(self, dt)
 
 	--move o objeto
 	go.set_position(go.get_position() + movimento)
-
-	--IMPORTANTE:grounded é resetado aqui. só será reativado em on_message()
-	self.grounded = false
+		-- COMBATE: VIDA
+	if self.invencivel == true then
+		self.timer_invencivel = self.timer_invencivel - dt
+		if self.timer_invencivel <= 0 then
+			self.invencivel = false
+			self.timer_invencivel = 0
+		end
+	end
 end
 
 function on_input(self, action_id, action)
@@ -80,6 +91,36 @@ function on_message(self, message_id, message, sender)
 				pos.y = pos.y + message.distance
 				go.set_position(pos)
 			end
+
+		elseif message.other_group == hash("enemy") then
+			if not self.invencivel then
+				self.vida = self.vida - 1
+				print("Vida:" .. self.vida)
+
+				self.invencivel = true
+				self.timer_invencivel = self.tempo_invencivel
+
+				if self.vida <= 0 then
+					reset_game(self)
+				end
+			end
 		end
 	end
+end
+
+function reset_game(self)
+	--Reset das variáveis do player
+	self.vida = 3
+	self.vel = vmath.vector3(0, 0, 0)
+	self.input.left = false
+	self.input.right = false
+	self.grounded = false
+
+	--reset invecibilidade
+	self.invencivel = false
+	self.timer_invencivel = 0
+	self.tempo_invencivel = 1.0
+
+	--resetar a posicao para a inicial
+	go.set_position(v.math.vector3(50, 100, 0))
 end

@@ -1,3 +1,7 @@
+components {
+  id: "enemy"
+  component: "/main/assets/scripts/enemy.script"
+}
 embedded_components {
   id: "collisionobject"
   type: "collisionobject"
