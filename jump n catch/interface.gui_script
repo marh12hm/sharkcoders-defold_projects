@@ -1,0 +1,9 @@
+function init(self)
+	gui.set_text(gui.get_node("life"), "Vidas: 5")
+end
+
+function on_message(self, message_id, message)
+	if message_id == hash("atualizar_vida") then
+		gui.set_text(gui.get_node("life"), "Vidas: " .. message.valor)
+	end
+end

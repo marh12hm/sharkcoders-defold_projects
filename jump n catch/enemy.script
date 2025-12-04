@@ -1,0 +1,19 @@
+go.property("speed", 200)
+go.property("left_limit", 100) -- pode mudar dependendo de onde 
+go.property("right_limit", 400) -- queremos que ele fique a andar (> <)
+function init(self)
+	self.dir = 1 --começa a andar para a direita
+	self.grounded = true -- para não cair pelo mapa
+end
+function update(self, dt)
+	local position = go.get_position()
+	position.x = position.x + self.speed * self.dir * dt
+
+	if position.x < self.left_limit then
+		self.dir = 1
+	elseif position.x > self.right_limit then
+		self.dir = -1
+	end
+
+	go.set_position(position)
+end

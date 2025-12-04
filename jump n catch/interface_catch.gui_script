@@ -1,0 +1,9 @@
+function init(self)
+	gui.set_text(gui.get_node("catch"), "Apanha a moedinha Joana!")
+end
+
+function on_message(self, message_id, message)
+	if message_id == hash("atualizar_catch") then
+		gui.set_text(gui.get_node("catch"), "Apanhaste a moedinha Joana! " .. message.valor)
+	end
+end
