@@ -1,0 +1,51 @@
+script: "/main/assets/scripts/interface.gui_script"
+fonts {
+  name: "always_on_top"
+  font: "/builtins/fonts/debug/always_on_top.font"
+}
+fonts {
+  name: "default"
+  font: "/builtins/fonts/default.font"
+}
+nodes {
+  position {
+    x: 21.0
+    y: 584.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    z: 0.6
+  }
+  type: TYPE_TEXT
+  text: "Vidas: 5\n"
+  ""
+  font: "always_on_top"
+  id: "life"
+  pivot: PIVOT_W
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 21.0
+    y: 553.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    z: 0.6
+  }
+  type: TYPE_TEXT
+  text: "Apanha a moedinha Joana! :D"
+  font: "always_on_top"
+  id: "score"
+  pivot: PIVOT_W
+  inherit_alpha: true
+  alpha: 0.82
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

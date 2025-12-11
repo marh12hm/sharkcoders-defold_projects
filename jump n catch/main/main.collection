@@ -281,4 +281,24 @@ instances {
     z: 1.626667
   }
 }
+instances {
+  id: "interface"
+  prototype: "/main/interface.go"
+  position {
+    x: -3.902448
+    y: -150.26027
+  }
+}
+instances {
+  id: "item"
+  prototype: "/main/item.go"
+  position {
+    x: 461.49243
+    y: 47.918564
+  }
+  scale3 {
+    x: 3.192599
+    y: 3.444236
+  }
+}
 scale_along_z: 0

@@ -1,0 +1,12 @@
+function init(self)
+	gui.set_text(gui.get_node("life"), "Vidas: 5")
+	gui.set_text(gui.get_node("score"), "Apanha a moedinha Joana! :D")
+end
+
+function on_message(self, message_id, message)
+	if message_id == hash("atualizar_score") then
+		gui.set_text(gui.get_node("score"), "Apanhaste-a! :P ")
+	elseif message_id == hash("atualizar_vida") then
+		gui.set_text(gui.get_node("life"), "Vidas: " .. message.valor)
+	end
+end

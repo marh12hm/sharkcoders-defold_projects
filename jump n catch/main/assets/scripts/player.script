@@ -95,22 +95,31 @@ function on_message(self, message_id, message, sender)
 		elseif message.other_group == hash("enemy") then
 			if not self.invencivel then
 				self.vida = self.vida - 1
-				print("Vida:" .. self.vida)
-
+				msg.post("main:/interface#interface", "atualizar_vida", { valor = self.vida })
 				self.invencivel = true
 				self.timer_invencivel = self.tempo_invencivel
-
+				
 				if self.vida <= 0 then
 					reset_game(self)
 				end
 			end
+		end
+
+	elseif message_id == hash("trigger_response") then
+		--Se o trigger foi ativado e o outro objeto for do grupo "item".
+		if message.enter and message.other_group == hash("item") then
+			--Apaga o item (a moeda Joana)
+			go.delete(message.other_id)
+
+			--Atualiza o score
+			msg.post("main:/interface#interface", "atualizar_score", {valor = 1})
 		end
 	end
 end
 
 function reset_game(self)
 	--Reset das variáveis do player
-	self.vida = 3
+	self.vida = 5
 	self.vel = vmath.vector3(0, 0, 0)
 	self.input.left = false
 	self.input.right = false
@@ -123,4 +132,7 @@ function reset_game(self)
 
 	--resetar a posicao para a inicial
 	go.set_position(v.math.vector3(50, 100, 0))
+
+	--reset do texto das vidas
+	msg.post("main:/interface#interface", "atualizar_vida", { valor = self.vida})
 end
