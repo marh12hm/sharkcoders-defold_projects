@@ -1,0 +1,16 @@
+images {
+  image: "/main/assets/Ch\303\243o.png"
+}
+images {
+  image: "/main/assets/Enemy.png"
+}
+images {
+  image: "/main/assets/Item.png"
+}
+images {
+  image: "/main/assets/Parede.png"
+}
+images {
+  image: "/main/assets/Player.png"
+}
+extrude_borders: 2
