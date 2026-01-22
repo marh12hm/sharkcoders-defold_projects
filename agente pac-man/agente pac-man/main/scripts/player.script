@@ -1,0 +1,94 @@
+go.property("speed", 150)
+
+function init(self)
+
+	self.input = {left = false, right = false, front = false, back = false}
+
+	self.vel = vmath.vector3(0,0,0)
+
+	self.mission = {
+		{ texto = "1- get cherry", concluida = false, pontos = 100}, 
+		{ texto = "2- get out, u shouldn't be here", concluida = false, pontos = 200}
+	}
+	self.pontos = 0
+	self.documentos_coletados = 0
+	self.total_documentos = 1
+
+	--Mostrar missões e pontos no início
+	msg.post("main:/interface#interface", "atualizar_pontos", { valor = self.pontos})
+	msg.post("main:/interface#interface", "atualizar_mission", { lista = self.mission})
+
+	msg.post(".", "acquire_input_focus")
+end
+
+function update(self, dt)
+	local dir = vmath.vector3()
+	
+	if self.input.left then dir.x = dir.x - 1 end
+	if self.input.right then dir.x = dir.x + 1 end
+	if self.input.front then dir.y = dir.y + 1 end
+	if self.input.back then dir.y = dir.y - 1 end
+	if dir.x ~= 0 or dir.y ~= 0 then
+		dir = vmath.normalize(dir) 
+		go.set_position(go.get_position() + dir * self.speed * dt)
+	end
+end
+
+function on_input(self, action_id, action)
+	if action_id == hash("left") then
+		if action.pressed then
+			self.input.left = true 
+		elseif action.released then
+			self.input.left = false
+		end
+	end
+	if action_id == hash("right") then
+		if action.pressed then
+			self.input.right = true 
+		elseif action.released then
+			self.input.right = false
+		end
+	end
+	if action_id == hash("front") then
+		if action.pressed then
+			self.input.front = true 
+		elseif action.released then
+			self.input.front = false
+		end
+	end	
+	if action_id == hash("back") then
+		if action.pressed then
+			self.input.back = true 
+		elseif action.released then
+			self.input.back = false
+		end
+	end
+end
+
+function concluir_missao(self, indice)
+	if not self.mission[indice].concluida then
+		self.mission[indice].concluida = true
+		self.pontos = self.pontos + self.mission[indice].pontos
+		msg.post("main:/interface#interface", "atualizar_pontos", { valor = self.pontos})
+		msg.post("main:/interface#interface", "atualizar_mission", { lista = self.mission})
+	end
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("trigger_response") and message.enter then
+		--colisão com o objeto
+		if message.other_group == hash("documento") then
+			go.delete(message.other_id)
+			if self.documentos_coletados >= self.total_documentos then
+				concluir_missao(self, 1) --missão 1: check
+			end
+		end
+
+		--colisão com saída
+		if message.other_group == hash("saida") then
+			if self.mission[1].concluida then
+				concluir_missao(self, 2) --misão 2: check
+			end
+		end
+	end
+end

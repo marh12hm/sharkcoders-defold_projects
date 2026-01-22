@@ -1,0 +1,21 @@
+images {
+  image: "/main/assets/Ch\303\243o.png"
+}
+images {
+  image: "/main/assets/Enemy.png"
+}
+images {
+  image: "/main/assets/Item.png"
+}
+images {
+  image: "/main/assets/Parede.png"
+}
+images {
+  image: "/main/assets/Player.png"
+}
+images {
+  image: "/main/assets/door.png"
+  pivot_x: 0.129096
+  pivot_y: 0.262603
+}
+extrude_borders: 2

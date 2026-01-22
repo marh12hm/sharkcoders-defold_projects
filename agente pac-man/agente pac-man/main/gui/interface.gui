@@ -1,0 +1,34 @@
+fonts {
+  name: "always_on_top"
+  font: "/builtins/fonts/debug/always_on_top.font"
+}
+fonts {
+  name: "default"
+  font: "/builtins/fonts/default.font"
+}
+nodes {
+  position {
+    x: 6.0
+    y: 49.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.6
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_TEXT
+  text: "1- get cherry\n"
+  "2- get out, u shouldn\'t be here\n"
+  "\n"
+  "P.S.: if u need to avoid someone, U SHOULDN\'T BE HERE!!!"
+  font: "always_on_top"
+  id: "mission"
+  pivot: PIVOT_W
+  inherit_alpha: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT
