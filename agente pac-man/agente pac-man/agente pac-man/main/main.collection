@@ -1,0 +1,650 @@
+name: "main"
+instances {
+  id: "player"
+  prototype: "/main/player/player.go"
+  position {
+    x: 121.57727
+    y: 160.88638
+  }
+}
+instances {
+  id: "cherry"
+  prototype: "/main/maps/cherry.go"
+  position {
+    x: 367.286
+    y: 145.12714
+  }
+}
+instances {
+  id: "wall"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 60.692867
+    y: -16.793056
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall1"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 60.692867
+    y: 17.206944
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall2"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 60.692867
+    y: 53.206944
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall3"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 60.692867
+    y: 85.20695
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall4"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 60.692867
+    y: 119.20695
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall5"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 60.692867
+    y: 152.20694
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall6"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 540.6929
+    y: -16.793056
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall7"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 540.6929
+    y: 17.206944
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall8"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 540.6929
+    y: 53.206944
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall9"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 540.6929
+    y: 85.20695
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall10"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 540.6929
+    y: 119.20695
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall11"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 540.6929
+    y: 138.20694
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall12"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 60.692867
+    y: 75.20695
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall13"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 60.692867
+    y: 109.20695
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall14"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 60.692867
+    y: 145.20694
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall15"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 60.692867
+    y: 177.20694
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall16"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 60.692867
+    y: 211.20694
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall17"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 60.692867
+    y: 244.20694
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall18"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 540.6929
+    y: 72.20695
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall19"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 540.6929
+    y: 106.20695
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall22"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 540.6929
+    y: 214.20694
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall23"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 540.6929
+    y: 245.20694
+  }
+  scale3 {
+    x: 1.947734
+    y: 1.947734
+    z: 1.947734
+  }
+}
+instances {
+  id: "wall24"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 99.38148
+    y: -19.303223
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall25"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 136.38147
+    y: -19.303223
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall26"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 176.38147
+    y: -19.303223
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall27"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 218.38147
+    y: -19.303223
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall28"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 249.38147
+    y: -19.303223
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall29"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 285.38147
+    y: -19.303223
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall30"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 315.38147
+    y: -19.303223
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall31"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 354.38147
+    y: -19.303223
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall32"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 396.38147
+    y: -19.303223
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall33"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 435.38147
+    y: -19.303223
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall34"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 467.38147
+    y: -19.303223
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall35"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 506.38147
+    y: -19.303223
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall36"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 396.38147
+    y: 237.69678
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall37"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 435.38147
+    y: 237.69678
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall38"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 136.38147
+    y: 237.69678
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall39"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 176.38147
+    y: 237.69678
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall40"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 99.38148
+    y: 237.69678
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall41"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 249.38147
+    y: 237.69678
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall42"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 467.38147
+    y: 237.69678
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall43"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 506.38147
+    y: 237.69678
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall44"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 354.38147
+    y: 237.69678
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall45"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 285.38147
+    y: 237.69678
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall46"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 315.38147
+    y: 237.69678
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "wall47"
+  prototype: "/main/maps/wall.go"
+  position {
+    x: 218.38147
+    y: 237.69678
+  }
+  scale3 {
+    x: 2.183466
+    y: 2.183466
+    z: 2.183466
+  }
+}
+instances {
+  id: "door"
+  prototype: "/main/maps/door.go"
+  position {
+    x: 498.59442
+    y: 215.10963
+  }
+  scale3 {
+    x: 0.076267
+    y: 0.076267
+    z: 0.076267
+  }
+}
+instances {
+  id: "background"
+  prototype: "/main/maps/background.go"
+  position {
+    x: 259.00067
+    y: 160.42001
+  }
+  scale3 {
+    x: 3.434667
+    y: 3.434667
+    z: 3.434667
+  }
+}
+instances {
+  id: "blue enemy"
+  prototype: "/main/enemies/blue enemy.go"
+  position {
+    x: 254.56393
+    y: 148.90642
+  }
+}
+scale_along_z: 0

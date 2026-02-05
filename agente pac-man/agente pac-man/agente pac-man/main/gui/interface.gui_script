@@ -1,0 +1,13 @@
+function on_message(self, message_id, message)
+	if message_id == hash("atualizar_pontos") then
+		gui.set_text(gui.get_node("points"), "Points: " .. message.valor)
+	elseif message_id == hash("atualizar_mission") then
+		local texto_final = ""
+		for i, m in ipairs(message.lista) do
+			local estado = m.concluida and "[Done]" or "[  ]"
+			texto_final = texto_final .. estado .. " " .. m.texto .. "\n"
+		end
+
+		gui.set_text(gui.get_node("mission"), texto_final)
+	end
+end

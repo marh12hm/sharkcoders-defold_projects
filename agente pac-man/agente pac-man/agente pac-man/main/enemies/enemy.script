@@ -1,0 +1,25 @@
+go.property("speed", 100)
+go.property("top_limit", 236.90)
+go.property("bottom_limit", 73.906)
+
+function init(self)
+	self.dir = 1
+	go.set(".", "scale.y", go.get(".", "scale.y") * -1)
+end
+
+function update(self, dt)
+	local pos = go.get_position()
+	pos.y = pos.y + self.speed * self.dir * dt
+
+	if pos.y >= self.top_limit then
+		pos.y = self.top_limit
+		self.dir = -1
+		go.set(".", "scale.y", go.get(".", "scale.y") * -1)
+	elseif pos.y <= self.bottom_limit then
+		pos.y = self.bottom_limit
+		self.dir = 1
+		go.set(".", "scale.y", go.get(".", "scale.y") * -1)
+	end
+
+	go.set_position(pos)
+end

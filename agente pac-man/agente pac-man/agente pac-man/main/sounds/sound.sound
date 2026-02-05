@@ -1,0 +1,4 @@
+sound: "/main/sounds/freesound_community-blue-blood-ogg-67848.ogg"
+looping: 1
+group: "sound"
+loopcount: 100
