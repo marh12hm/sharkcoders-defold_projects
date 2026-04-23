@@ -1,0 +1,39 @@
+name: "main"
+instances {
+  id: "coin"
+  prototype: "/main/game objects/coin.go"
+  position {
+    x: 155.44922
+    y: 149.75815
+  }
+}
+instances {
+  id: "demodog"
+  prototype: "/main/enemy/demodog.go"
+  position {
+    x: 108.51999
+    y: 139.79616
+  }
+  scale3 {
+    x: 0.693333
+    y: 0.693333
+    z: 0.693333
+  }
+}
+instances {
+  id: "Will Byers"
+  prototype: "/main/player/Will Byers.go"
+  position {
+    x: 2.6943
+    y: 173.63364
+  }
+}
+instances {
+  id: "chao"
+  prototype: "/main/game objects/chao.go"
+  position {
+    x: 7.5860877
+    y: 134.46176
+  }
+}
+scale_along_z: 0
