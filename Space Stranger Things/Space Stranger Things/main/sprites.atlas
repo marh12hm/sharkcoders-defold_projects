@@ -1,0 +1,16 @@
+images {
+  image: "/main/sprites/moeda.png.png"
+}
+images {
+  image: "/main/sprites/player.png"
+}
+images {
+  image: "/main/sprites/floor.png"
+}
+images {
+  image: "/main/sprites/enemy.png"
+}
+images {
+  image: "/main/sprites/background.png"
+}
+extrude_borders: 2
