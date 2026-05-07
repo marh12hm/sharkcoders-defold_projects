@@ -5,6 +5,7 @@ instances {
   position {
     x: 245.19441
     y: 127.25719
+    z: 1.0
   }
 }
 instances {
@@ -13,6 +14,7 @@ instances {
   position {
     x: 217.73448
     y: 185.6985
+    z: 1.0
   }
 }
 instances {
@@ -21,6 +23,7 @@ instances {
   position {
     x: 69.365555
     y: 228.61736
+    z: 1.0
   }
 }
 instances {
@@ -29,14 +32,11 @@ instances {
   position {
     x: 110.04603
     y: 470.9426
+    z: 1.0
   }
 }
 instances {
   id: "background"
   prototype: "/main/game objects/background.go"
-  position {
-    x: 352.75638
-    y: -93.11859
-  }
 }
 scale_along_z: 0

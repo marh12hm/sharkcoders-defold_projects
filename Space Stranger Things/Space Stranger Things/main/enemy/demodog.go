@@ -1,10 +1,6 @@
 components {
   id: "enemy"
   component: "/main/enemy/enemy.script"
-  position {
-    x: 88.14124
-    y: 36.89382
-  }
 }
 embedded_components {
   id: "sprite"

@@ -5,15 +5,16 @@ function init(self)
 	--Tabela para guardar o estado das teclas de movimento
 	self.input = {
 		left = false,
-		right = false
+		right = false,
+		jump = false
 	}
 
 	self.vel = vmath.vector3(0, 0, 0)
 	self.gravidade = -10
-	self.forca_pulo = 11
+	--self.gravidade = 0
+	self.forca_pulo = 20
 	self.grounded = false
 	--IMPORTANTE:grounded é resetado aqui. só será reativado em on_message()
-	self.grounded = false
 	self.vida = 1
 
 	--Pede ao motor para que este objeto receber eventos de input
@@ -72,16 +73,18 @@ function on_input(self, action_id, action)
 		end
 	end
 	if action_id == hash("jump") then
-		if action.pressed and self.grounded then
+		if self.grounded then
+		if action.pressed  then
 			self.vel.y = self.forca_pulo
 			self.grounded = false
+		end
 		end
 	end
 end
 
 function on_message(self, message_id, message, sender)
 	if message_id == hash("contact_point_response") then
-		if message.group == hash("ground") then
+		if message.group == hash("chao") then
 			print("chao")
 			--verificar se colidiu com o chão (normal apontando para cima)
 			if message.normal.y > 0.7 then
@@ -117,4 +120,24 @@ function on_message(self, message_id, message, sender)
 			msg.post("main:/interface#interface", "atualizar_score", {valor = 1})
 		end
 	end
+end
+
+function reset_game(self)
+	--Reset das variáveis do player
+	self.vida = 5
+	self.vel = vmath.vector3(0, 0, 0)
+	self.input.left = false
+	self.input.right = false
+	self.grounded = false
+
+	--reset invecibilidade
+	self.invencivel = false
+	self.timer_invencivel = 0
+	self.tempo_invencivel = 1.0
+
+	--resetar a posicao para a inicial
+	go.set_position(v.math.vector3(50, 100, 0))
+
+	--reset do texto das vidas
+	--msg.post("main:/interface#interface", "atualizar_vida", { valor = self.vida})
 end

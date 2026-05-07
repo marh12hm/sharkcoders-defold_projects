@@ -1,12 +1,4 @@
 key_trigger {
-  input: KEY_W
-  action: "front"
-}
-key_trigger {
-  input: KEY_S
-  action: "back"
-}
-key_trigger {
   input: KEY_D
   action: "right"
 }
@@ -17,6 +9,10 @@ key_trigger {
 key_trigger {
   input: KEY_SPACE
   action: "jump"
+}
+key_trigger {
+  input: KEY_R
+  action: "resetcheatcode"
 }
 mouse_trigger {
   input: MOUSE_BUTTON_1
